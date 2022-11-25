@@ -1,0 +1,281 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Black.ttf) format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Bold.ttf) format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Medium.ttf) format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Light.ttf) format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-LightItalic.ttf) format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* HERO SECTION */
+
+header {
+  background-color: #1F2937;
+  padding: 15px 100px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #f9faf8;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.menu, .secondary-text {
+  color: #e5e7eb;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.menu ul {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #3882f6;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin: 70px 0;
+}
+
+.main-text {
+  color: #f9faf8;
+  font-weight: 700;
+  font-size: 48px;
+  margin: 0;
+}
+
+.cta-button {
+  background-color: #3882f6;
+  border: 0;
+  border-radius: 5px;
+  color: #f9faf8;
+  padding: 5px 20px;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 40vw;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 15px 30px;
+  }
+  .banner {
+    flex-direction: column;
+    margin: 50px 0;
+  }
+  .hero-image {
+    max-width: 100%;
+  }
+}
+
+/* INFO SECTION */
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0 60px 0;
+}
+
+.information .title {
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.information .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.information figure {
+  max-width: 120px;
+}
+
+.information img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 2px solid #3882f6;
+}
+
+.information figcaption {
+  font-size: 0.9em;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* QUOTE SECTION */
+
+.quote {
+  background-color: #e5e7eb;
+  color: #1f2937;
+  padding: 30px 20% 15px;
+  font-weight: 300;
+}
+
+.quote-text {
+  font-size: 36px;
+    font-style: italic;
+}
+
+.quote-name {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .quote {
+    padding: 15px 30px;
+  }
+}
+
+/* CTA SECTION */
+
+.cta {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  background-color: #3882f6;
+  margin: 60px 20%;
+  padding: 30px;
+  border-radius: 8px;
+  color: #f9faf8;
+}
+
+.cta-content {
+  max-width: 70%;
+}
+
+.cta-content p {
+  margin: 0;
+}
+
+.cta-button-empty {
+  background: none;
+  color: #f9faf8;
+  border: 1px solid #f9faf8;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .cta {
+    margin: 60px 10%;
+  }
+}
+
+/* FOOTER */
+
+footer {
+ background-color: #1f2937;
+ color: #f9faf8;
+ text-align: center;
+}
+
+footer p {
+  font-size: 0.9em;
+  padding: 10px 0;
+}
+
+/* MISC */
+
+.page-header {
+  padding: 40px 0 10px;
+}
+
+.page-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 100px;
+  gap: 50px;
+  color: #1f2937;
+  font-size: 18px;
+}
+
+.page-content .title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.page-content img {
+  width: 100%;
+  max-width: 410px;
+}
+
+@media only screen and (max-width: 768px) {
+  .page-content {
+    flex-direction: column;
+    margin: 50px;
+  }
+}
+
+#map {
+  padding: 40px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#map img {
+  width: 100%;
+}
